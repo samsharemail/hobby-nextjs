@@ -22,7 +22,7 @@ export default function Home() {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:8000/api/generate-from-zip",
+        "https://hobby-fastapi.onrender.com/api/generate-from-zip",
         formData,
         { headers: { "Content-Type": "multipart/form-data" } }
       );
